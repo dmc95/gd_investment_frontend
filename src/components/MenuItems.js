@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import ItemMenu from "./assets/images/icons8-menu.png";
-import Cancel from "./assets/images/cancel.png";
+import ItemMenu from "../containers/assets/images/icons8-menu.png"
+import Cancel from "../containers/assets/images/cancel.png";
 
 const MenuItems = ({ setActive, active }) => {
   return (
@@ -34,6 +34,18 @@ const MenuItems = ({ setActive, active }) => {
             onClick={() => setActive(!active)}
           >
             <Link to="/">ACCUEIL</Link>
+          </li>
+          <li
+            className="transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-110"
+            onClick={() => setActive(!active)}
+          >
+            <Link to="/Etf">ETF</Link>
+          </li>
+          <li
+            className="transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-110"
+            onClick={() => setActive(!active)}
+          >
+            <Link to="/Graphics">GRAPHIQUES</Link>
           </li>
           <li
             className="transition ease-in-out delay-150 hover:-translate-y-2 hover:scale-110"

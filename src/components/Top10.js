@@ -32,7 +32,7 @@ const Top10 = ({ setSelectedSymbol }) => {
   return isLoading ? (
     <span>Chargement</span>
   ) : (
-    <div className="h-[450px] bg-green-300  ">
+    <div className="h-[450px] mt-28 bg-green-300  ">
       {data.map((elem, key) => (
         <div onClick={() => handleClick(elem.symbol)} key={key} className="cursor-pointer flex flex-row justify-evenly my-3 p-2 text-lg border rounded-lg hover:translate-x-3 shadow-md backdrop-blur-sm bg-white/30">
           <p>{elem.symbol}</p>

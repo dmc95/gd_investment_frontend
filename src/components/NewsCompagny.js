@@ -66,26 +66,26 @@ const News = () => {
        <p>{elem.title}</p> 
        ))}
       </div> */}
-      <div className="w-[820px] h-[550px] bg-red-500 ">
+      <div className="w-[1020px] h-[750px] bg-red-500 rounded-lg">
         <a href={data[0].url} rel="noreferrer" target="_blank">
-          <div className="w-[820px] h-[300px] flex ">
+          <div className="w-[1020px] h-[300px] flex ">
             <img
-              className="w-[500px] object-contain"
+              className="w-[800px] h-[400px] object-contain rounded-tl-lg"
               src={data[0].image ? data[0].image : gd}
               alt=""
             />
-            <p>{data[0].headline}</p>
+            <p className="text-2xl">{data[0].headline}</p>
           </div>
         </a>
 
 
-        <div className="w-[820px] h-[250px] flex overflow-hidden overflow-x-scroll my-2">
+        <div className="w-[1020px] h-[330px] flex overflow-hidden overflow-x-scroll mt-32">
           {data.map((elem, index) =>
             elem.image ? (
               <a href={elem.url} rel="noreferrer" target="_blank">
-                <div key={index} className="w-[250px] flex-shrink-0 mx-5">
+                <div key={index} className="w-[240px] flex-shrink-0 mx-5">
                   <img
-                    className="w-[250px] h-[140px] object-contain"
+                    className="w-[350px] h-[220px] object-contain"
                     src={elem.image}
                     alt=""
                   />

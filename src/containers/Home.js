@@ -5,7 +5,7 @@ import NewsCrypto from '../components/NewsCrypto'
 
 const Home = () => {
   return (
-    <section className='container max-w-screen-2xl h-[2000px] bg-slate-300 mx-auto'>
+    <section className='2xl:w-[3200px] h-[2200px] bg-slate-300 mx-auto'>
     <div className='pt-[250px]'>
         <div className='flex justify-evenly columns-2'>
             <NewsCompagny />

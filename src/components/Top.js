@@ -16,7 +16,7 @@ const Top = () => {
         const response = await axios.get(
           `http://localhost:5000/daily_trade/${selectedSymbol}`
         );
-        // console.log(response.data);
+        console.log(response.data);
         setData(response.data);
         setIsLoading(false);
       } catch (error) {
@@ -32,8 +32,8 @@ const Top = () => {
     <span>chargement</span>
   ) : (
     <>
-      <div className="w-[500px] h-[800px]">
-        <div className="h-[350px] bg-slate-400">
+      <div className="w-[900px] h-[800px]">
+        <div className="h-[500px] bg-slate-400">
           <Line
             data={{
               labels: data.map((elem) =>elem.date_trade.substring(2,10)),
