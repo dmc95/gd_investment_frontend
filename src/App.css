@@ -1,0 +1,25 @@
+  /* 'customGolden':'#A8902D',
+   'customBlue':'#6764E9',
+  'customWhite':'#EEF0F2',   
+  'customGray':'#ABA8B2'
+ */
+
+body{
+  background-color: #ABA8B2;
+}
+
+.border{
+  border-color: #A8902D;
+}
+
+.bg{
+  background-color: #EEF0F2;
+}
+
+.bgBtn{
+  background-color: #6764E9;
+}
+
+.bgCard{
+  background-color: #c0c0c0;
+}
