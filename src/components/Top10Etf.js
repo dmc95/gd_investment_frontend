@@ -54,7 +54,7 @@ const Top10Etf = () => {
       <div className='flex justify-center'>
       <div className="mt-20 xl:w-[600px] xl:h-[700px] flex flex-col xl:flex-wrap content-center">
         {dataTop && dataTop.map((elem, key) => (
-            <div onClick={() => handleClick(elem.symbol)} key={key} className="flex justify-evenly cursor-pointer mx-2 w-[320px] xl:w-11/12 xl:h-[100px] 2xl:my-8 my-3 p-2 text-lg border rounded-lg hover:translate-y-3 shadow-md backdrop-blur-sm bg-white/30">
+            <div onClick={() => handleClick(elem.symbol)} key={key} className="flex justify-evenly cursor-pointer mx-2 w-[320px] xl:w-11/12 xl:h-[100px] 2xl:my-8 my-3 p-2 text-lg border borderColor rounded-lg hover:translate-y-3 shadow-md backdrop-blur-sm bg-white/30">
             <p className='w-[150px] font-semibold '>{elem.security}</p>
             <div className="w-[300px] flex justify-between">
               <p className='text-[#6764E9]'>{elem.close_value.substring(0,7)}</p>

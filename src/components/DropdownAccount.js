@@ -36,13 +36,13 @@ const DropdownAccount = ({ token, setUser }) => {
                 <div className="p-2">
                   <Link
                     to="/account"
-                    className="hover:text-blue-600"
+                    className="hover:text-slate-400 cursor-pointerr:text-blue-600"
                     onClick={closeMenu} 
                   >
                     Mon compte
                   </Link>
                 </div>
-                <div className="p-2" onClick={handleLogout}>
+                <div className="p-2 hover:text-slate-400 cursor-pointer" onClick={handleLogout}>
                   Déconnexion
                 </div>
               </>

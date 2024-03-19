@@ -25,7 +25,7 @@ const NewsCrypto = () => {
     <span>chargement</span>
   ) : (
     <>
-      <section className="xl:w-full  mt-20 rounded-lg border bg-white/30 xl:mx-5 max-2xl:mb-10 shadow-md">
+      <section className="xl:w-full  mt-20 rounded-lg border borderColor bg-white/30 xl:mx-5 max-2xl:mb-10 shadow-md">
         <h2 className="text-left my-2 text-xl ml-1">Cryptomonnaies</h2>
 
         <div className="mx-2 xl:flex">

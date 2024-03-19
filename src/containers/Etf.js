@@ -7,7 +7,7 @@ const Etf = () => {
   const [selectedSymbol, setSelectedSymbol] = useState(null);
 
   return (
-    <div className="h-[100vh] pt-72">
+    <div className="pt-72 ">
       <div className="flex flex-col justify-evenly">
         <Top10Etf setSelectedSymbol={setSelectedSymbol} />
         <Flop10Etf />

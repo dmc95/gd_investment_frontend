@@ -65,7 +65,7 @@ const Flop10Etf = () => {
               <div
                 onClick={() => handleClick(elem.symbol)}
                 key={key}
-                className="flex justify-evenly cursor-pointer mx-2 w-[320px] xl:w-11/12 xl:h-[100px] 2xl:my-8 my-3 p-2 text-lg border rounded-lg hover:translate-y-3 shadow-md backdrop-blur-sm bg-white/30"
+                className="flex justify-evenly cursor-pointer mx-2 w-[320px] xl:w-11/12 xl:h-[100px] 2xl:my-8 my-3 p-2 text-lg border borderColor rounded-lg hover:translate-y-3 shadow-md backdrop-blur-sm bg-white/30"
               >
                 <p className="w-[150px] font-semibold">{elem.security}</p>
                 <div className="w-[300px] flex justify-between">

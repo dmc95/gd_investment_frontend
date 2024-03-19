@@ -22,7 +22,7 @@ const Preferences = ({ onTimeFilterChange, token, favoritesUpdated }) => {
     fetchData();
   }, []); 
 
-  const [selectedTimeFilter, setSelectedTimeFilter] = useState('1month');
+  const [selectedTimeFilter, setSelectedTimeFilter] = useState('1week');
 
 
   const handleTimeFilterChange = (value) => {

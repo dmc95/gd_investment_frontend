@@ -38,7 +38,7 @@ const Top10 = ({ setSelectedSymbol }) => {
         <div
           onClick={() => handleClick(elem.symbol)}
           key={key}
-          className="cursor-pointer flex flex-row justify-evenly 2xl:my-8 my-3 p-2 text-lg border rounded-lg hover:translate-x-3 shadow-md backdrop-blur-sm bg-white/30"
+          className="cursor-pointer flex flex-row justify-evenly 2xl:my-8 my-3 p-2 text-lg border borderColor rounded-lg hover:translate-x-3 shadow-md backdrop-blur-sm bg-white/30"
         >
           <p className="w-[150px]">{elem.security}</p>
           <div className="w-[300px] flex justify-evenly items-center">

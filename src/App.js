@@ -70,7 +70,7 @@ function App() {
           <Route path="*" element={<Home />} />
         </Routes>
         <ModalSearch visible={showModal} onClose={() => setShowModal(false)} />
-        <Footer />
+        <Footer  setUser={setUser} token={token}/>
       </div>
     </Router>
   );

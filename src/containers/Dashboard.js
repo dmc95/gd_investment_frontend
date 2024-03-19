@@ -50,20 +50,20 @@ const Dashboard = ({ token }) => {
         divParent={"-mt-10 2xl:w-11/12 h-[150px] flex items-end overflow-x-hidden "}
         divText={"w-[300px] flex justify-evenly items-center"}
         divCard={
-          "flex mx-2 sm:w-1/2 sm:h-1/4 w-3/12 md:h-1/3 2xl:my-8 my-3 p-2 text-sm border rounded-lg shadow-md bg-black/70 animate-scrollSpeed"
+          "flex mx-2 sm:w-1/2 sm:h-1/4 w-3/12 md:h-1/3 2xl:my-8 my-3 p-2 text-sm border borderColor rounded-lg shadow-md bg-black/70 animate-scrollSpeed"
         }
         styleText={"w-[150px] font-semibold text-sm text-white"}
       />
         <div className="h-screen flex">
           <div className="flex flex-col w-2/12">
-            <div className="h-1/2 border mx-2 rounded-lg overflow-y-scroll bgCard">
+            <div className="h-1/2 border borderColor mx-2 rounded-lg overflow-y-scroll bgCard">
               <TickersEtf
                 onSymbolClick={handleSymbolClick}
                 token={token}
                 updateFavorites={updateFavorites}
               />
             </div>
-            <div className="h-1/3 border m-2 rounded-lg overflow-y-scroll bgCard">
+            <div className="h-1/3 border borderColor m-2 rounded-lg overflow-y-scroll bgCard">
               <Preferences
               favoritesUpdated={favoritesUpdated}
                 onTimeFilterChange={handleTimeFilterChange}
@@ -73,10 +73,10 @@ const Dashboard = ({ token }) => {
           </div>
 
           <div className="flex flex-col w-8/12">
-            <div className="h-1/6 border mx-2 overflow-y-scroll rounded-lg bgCard">
+            <div className="h-1/6 borderColor border mx-2 overflow-y-scroll rounded-lg bgCard">
               <NewsDashboard />
             </div>
-            <div className="h-4/6 border m-2 rounded-lg z-10 bgCard">
+            <div className="h-4/6 border borderColor m-2 rounded-lg z-10 bgCard">
               <LineChart
                 selectedSymbols={selectedSymbols}
                 filter={selectedTimeFilter}
@@ -85,8 +85,8 @@ const Dashboard = ({ token }) => {
           </div>
 
           <div className="w-2/12">
-            <div className="xl:h-[845px] border mx-2 rounded-lg bgCard">
-              <CardFavorite favorites={ favoritesUpdated }/>
+            <div className="xl:h-[965px] border borderColor mx-2 rounded-lg bgCard">
+              <CardFavorite favorites={ favoritesUpdated } token={token}/>
             </div>
           </div>
         </div>

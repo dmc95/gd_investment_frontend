@@ -1,14 +1,20 @@
-  /* 'customGolden':'#A8902D',
-   'customBlue':'#6764E9',
-  'customWhite':'#EEF0F2',   
-  'customGray':'#ABA8B2'
- */
+.App
+{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer
+{
+  margin-top: auto;
+}
 
 body{
   background-color: #ABA8B2;
 }
 
-.border{
+.borderColor{
   border-color: #A8902D;
 }
 
